@@ -1,0 +1,5 @@
+# Build artifacts
+precinctin-1.2.zip
+
+# Mac-specific files
+.DS_Store

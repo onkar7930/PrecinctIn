@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "PrecinctIn",
+  "version": "1.2",
+  "description": "Hides LinkedIn posts containing specific keywords.",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "host_permissions": ["https://www.linkedin.com/*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.linkedin.com/feed/*", "https://www.linkedin.com/"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
